@@ -1,0 +1,193 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anjeline DayDay | Personal Portfolio</title>
+    <style>
+        :root {
+            --primary: #d8a7b1;
+            --secondary: #F75270;
+            --accent: #ffb3c6;
+            --light: #ffa0c5;
+            --dark: #cf6d93;
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        header {
+            background: linear-gradient(135deg, var(--primary), #E45A92);
+            color: white;
+            padding: 5rem 2rem 3rem;
+            position: relative;
+            text-align: center;
+        }
+        .profile-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+        .profile-photo {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            border: 5px solid white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            margin-bottom: 1.5rem;
+            background: url('./assets/Messenger_creation_EDF76877-593D-426B-AE40-B5C4C83349B6.jpeg') center/cover; 
+        }
+        .header-content {
+            max-width: 700px;
+        }
+        h1 {
+            font-size: 3.2rem;
+            margin-bottom: 0.5rem;
+        }
+        .tagline {
+            font-size: 1.4rem;
+            opacity: 0.9;
+            margin-bottom: 1.5rem;
+        }
+        .contact-info {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 1.5rem;
+            margin: 1rem 0;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 40px auto 0;
+            padding: 0 2rem 2rem;
+            position: relative;
+            z-index: 2;
+        }
+        section {
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: var(--secondary);
+            border-bottom: 2px solid var(--secondary);
+            padding-bottom: 0.8rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.8rem;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1.2rem;
+            margin-top: 1rem;
+        }
+        .experience {
+            margin-bottom: 1.8rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px dashed #eee;
+        }
+        .experience:last-child {
+            border-bottom: none;
+        }
+        h3 {
+            color: var(--primary);
+            margin-bottom: 0.3rem;
+        }
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #777;
+            background: var(--dark);
+            color: white;
+            margin-top: 3rem;
+        }
+        @media (max-width: 768px) {
+            .container { margin-top: -30px; }
+            h1 { font-size: 2.4rem; }
+            .tagline { font-size: 1.1rem; }
+            .profile-photo { width: 200px; height: 200px; }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="profile-container">
+            <div class="profile-photo"></div>
+            <div class="header-content">
+                <h1>Anne</h1>
+                <p class="tagline">Web Developer</p>
+                <div class="contact-info">
+                    <div class="contact-item">📧 daydayanjeline136@gmail.com</div>
+                    <div class="contact-item">📱 09304028628</div>
+                    <div class="contact-item">📍 Zamboanga Sibugay Province</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My name is Anjeline Baya Dayday . I am 22 years old and I live in Lower Tipan Naga Zamboanga Sibugay. I am currently studying at Dr. Aurelio Mendoza Memorial Colleges  taking up the  Bachelor of Science in Computer Studies. Some of my interests  are dancing, eating, cooking and etc . and I enjoy learning new things that help me grow as a person. I believe in being hardworking, respectful, and dedicated in everything I do. I look forward to achieving my goals and contributing positively to my community.</p>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div>• cooking</div>
+                <div>• Budgeting</div>
+                <div>• Coding</div>
+                <div>• typing </div>
+                
+            
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Experiences</h2>
+            <div class="experience">
+                <h3>Coding</h3>
+                <p><strong>C++/JVS/WEBSITE/Database</strong> | Since 2023</p>
+                <ul>
+                    <li>Creating Library System with Database</li>
+                    <li>Creating Functionable Websites</li>
+                </ul>
+            </div>
+           
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <p><strong>Associate In Computer Technology</strong><br>
+            Western Mindanao State University | 2023</p>
+            <p><strong>Batchelor of Science Computer Studies</strong><br>
+            Dr. Areulio Mendoza Memorial Colleges | undergraduate</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2025 Anjeline Dayday. All rights reserved.</p>
+    </footer>
+</body>
+</html>
